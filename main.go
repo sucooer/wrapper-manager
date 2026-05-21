@@ -85,6 +85,7 @@ func (s *server) Login(stream grpc.BidiStreamingServer[pb.LoginRequest, pb.Login
 				if err != nil {
 					return err
 				}
+				return nil
 			}
 		}
 		if req.Data.TwoStepCode != "" {

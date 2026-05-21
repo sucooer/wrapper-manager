@@ -2,6 +2,7 @@ services:
   wrapper-manager:
     build: .
     container_name: wrapper-manager
+    privileged: true
     command: [
       "--host", "0.0.0.0",
       "--port", "8080",
